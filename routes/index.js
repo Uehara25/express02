@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', function(req, res, next){
-  res.json(req.body)
+  res.render('showname', {name: req.body["name"]})
 });
 
 module.exports = router;
